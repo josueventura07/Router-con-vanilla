@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog SPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <button id="home" onclick="ROUTER.load('home')">Home</button>
+        <button id="About" onclick="ROUTER.load('about')">About</button>
+        <button id="Contact" onclick="ROUTER.load('contact')">Contact</button>
+    </header>
+
+    <div id="content"></div>
+
+<script src="./js/router.js"></script>
+<script src="./js/routes.js"></script>
+<script src="./js/index.js"></script>    
+</body>
+</html>
