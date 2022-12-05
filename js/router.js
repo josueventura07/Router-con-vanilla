@@ -10,7 +10,7 @@ class Router {
     initRouter() {
         const { location: { pathname = '/'} } = window
         const URL = pathname === '/' ? 'home' : pathname.replace('/', '')
-        this.load()
+        this.load(URL)
     }
 
     // Metodo para cargar las vistas
