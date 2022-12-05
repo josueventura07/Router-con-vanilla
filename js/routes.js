@@ -4,9 +4,9 @@ const PATHS = {
     home: {
         path: '/',
         template: `
-            <h1>🏠 Home</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
-            <img src="./img/background_img/adventure-g1b012a983_1920.jpg">
+            <h1 class="home_title">Bienvenido a Mi Blog</h1>
+            <p class="home_p">Disfruto de mi trabajo como Productor Musical & Beat Maker, es mi pasion y lo pongo a tu disposicion asi que puedes segir mis contactos en la parte superior derecha</p>
+            
         `,
     },
     about: {
@@ -15,7 +15,7 @@ const PATHS = {
             <div class="about_container">
                 <h1>👩🏻‍💻 Sobre mi</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
-                <img src="./img/background_img/canyon-gdd95c9c75_1920.jpg" alt="Random Image">
+                <img src="./img/background_img/production-gcb26bc845_1920.jpg" alt="About_img">
             </div>
         `,
     },
