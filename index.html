@@ -9,21 +9,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="bg_body">
 
     <header>
         <nav class="navbar">
-            <button id="home" onclick="ROUTER.load('home')">Home</button>
-            <button id="About" onclick="ROUTER.load('about')">About</button>
-            <button id="Contact" onclick="ROUTER.load('contact')">Contact</button>
+            <ul>
+                <li class="btnNav" id="home" onclick="ROUTER.load('home')">Home</li>
+                <li class="btnNav" id="About" onclick="ROUTER.load('about')">About</li>
+                <li class="btnNav" id="Contact" onclick="ROUTER.load('contact')">Contact</li>
+            </ul>
+            
             <div class="title_logo">
                 <h1>EBEN J MUSIC</h1>
             </div>
             <div class="socials">
-                <i class="fa-brands fa-linkedin social_icons"></i>
-                <i class="fa-solid fa-envelope social_icons"></i>
-                <i class="fa-brands fa-whatsapp social_icons"></i>
-                <i class="fa-brands fa-facebook social_icons"></i>
+                <i class="fa-brands fa-linkedin social_icons"><a href="www.linkedin.com/in/josueventura"></a></i>
+                <i class="fa-solid fa-envelope social_icons"><a href="mailto:josueandresventura@gmail.com"></a></i>
+                <div class="whatsapp">
+                    <i class="fa-brands fa-whatsapp social_icons"></i>
+                    <p>809-481-7449</p>
+                </div>
+                <i class="fa-brands fa-facebook social_icons"><a href="https://www.facebook.com/josueventuramusic"></a></i>
             </div>
         </nav>
     </header>
@@ -32,6 +38,7 @@
 
 <script src="./js/router.js"></script>
 <script src="./js/routes.js"></script>
-<script src="./js/index.js"></script>    
+<script src="./js/index.js"></script>
+<script src="./main.js"></script>    
 </body>
 </html>

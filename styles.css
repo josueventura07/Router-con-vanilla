@@ -1,6 +1,6 @@
 
 * {
-
+    
     margin: 0;
     padding: 0;
 }
@@ -10,16 +10,39 @@ body {
     height: 100%;
     box-sizing: border-box;
     margin: auto;
-    background-image: url('./img/background_img/guitar-g85826b5d8_1920.jpg');
+    /* background-image: url('./img/background_img/guitar-g85826b5d8_1920.jpg'); */
     background-color: rgb(39, 20, 20);
     
 }
 
+
 .body_container {
-    width: 50%;
-    height: 250px;
+    width: 100vw;
+    height: 100vh;
+    
     color: wheat;
-    padding-top: 50px;
+    
+    
+}
+
+.home_container {
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/background_img/guitar-g85826b5d8_1920.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+.about_container {
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/background_img/production-gcb26bc845_1920.jpg');
+}
+
+.contact_container {
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/background_img/music-instruments-g38a4d5df4_1920.jpg');
     
 }
 
@@ -37,7 +60,7 @@ header {
     justify-content: flex-start;
     align-items: flex-end;
     padding-left: 10%;
-    position: relative;
+    
 }
 
 .title_logo {
@@ -62,8 +85,8 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 0.3rem;
-    background-color: rgba(204, 204, 204, 0.5);
-    border-radius: 50px;
+    /* background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 50px; */
 }
 
 .social_icons {
@@ -74,7 +97,24 @@ header {
     
 }
 
-button {
+.whatsapp {
+    border-radius: 50px;
+    padding-right: 5px;
+    background-color: rgba(204, 204, 204, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    
+}
+
+.whatsapp p {
+    font-size: 14px;
+    color: orangered;
+    font-weight: bold;
+}
+
+li {
     background: none;
     color: inherit;
     border: none;
@@ -84,7 +124,7 @@ button {
     outline: inherit;
 }
 
-button {
+li {
     margin-top: 10px;
     margin-right: 10px;
     padding: 15px 40px;
@@ -113,23 +153,41 @@ button {
     text-decoration: none;
 }
 
-button:hover {
+li:hover {
     /* background-color: #ed4444; */
     background-image: url('./img/background_img/guitar-g85826b5d8_1920.jpg');
     background-position: center;
     background-size: cover;
 }
 
-button:active {
+li:active {
     box-shadow: 0px 1px 0px 0px #cd1313;
 }
 
+.home_info {
+    margin-top: 150px;
+    margin: auto, auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.home_content {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 400px;
+    height: 200px;
+    
+
+}
+
 .home_title {
+    margin-top: 30px;
     font-size: 50px;
 }
 
 .home_p {
-    margin-top: 30px;
+    
     font-size: 30px;
 
 }
@@ -158,7 +216,7 @@ button:active {
 #Contact:hover {
     /* background-color: #60ed44; */
     color: transparent;
-    background-image: url('./img/background_img/contact-us-g9df68b3cc_1920.jpg');
+    background-image: url('./img/background_img/music-instruments-g38a4d5df4_1920.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -167,11 +225,11 @@ button:active {
     box-shadow: 0px 1px 0px 0px #13cd23;
 }
 
-#content {
+/* #content {
     max-width: 80%;
     text-align: center;
     margin: 40px auto;
-}
+} */
 
 img {
     width: 100%;
