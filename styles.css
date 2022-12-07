@@ -15,6 +15,10 @@ body {
     
 }
 
+a {
+    color: inherit;
+}
+
 
 .body_container {
     width: 100vw;
@@ -29,21 +33,52 @@ body {
     width: 100%;
     height: 100%;
     background-image: url('./img/background_img/guitar-g85826b5d8_1920.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
+
+
+.home_container2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 158, 228, 0.3);
+    /* background-image: url('./img/background_img/music-g822d0d8f8_1920.jpg'); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.home_container2 img {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bible {
+    width: 60%;
+    
+}
+
 
 .about_container {
     width: 100%;
     height: 100%;
     background-image: url('./img/background_img/production-gcb26bc845_1920.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .contact_container {
     width: 100%;
     height: 100%;
     background-image: url('./img/background_img/music-instruments-g38a4d5df4_1920.jpg');
-    
+    background-position: center;
+    background-size: cover;
 }
 
 header {
@@ -69,17 +104,23 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    gap: 10px;
     font-size: 25px;
     text-shadow: 0px 3px 5px #00000009;
     color: wheat;
     
 }
 
+.fa-youtube {
+    font-size: 50px;
+    color: red;
+}
+
 .socials {
     position: absolute;
     right: 10%;
     top: 100%;
-    width: 250px;
+    width: 300px;
     height: 30px;
     display: flex;
     justify-content: space-around;
@@ -165,20 +206,49 @@ li:active {
 }
 
 .home_info {
-    margin-top: 150px;
-    margin: auto, auto;
+    margin-top: 38%;
+    margin-left: 30%;
     width: 100%;
     max-width: 900px;
 }
 
-.home_content {
-    position: absolute;
+.multimedia_content {
+    /* position: absolute;
     bottom: 10%;
-    right: 5%;
-    width: 400px;
-    height: 200px;
+    right: 5%; */
     
+    padding: 15% 10px 10px 10px;
+    margin: auto;
+    width: 40%;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+    position: relative;
+    
+}
 
+.home_multimedia {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 10px 13px 10px #0009;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.main_video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    
 }
 
 .home_title {

@@ -6,13 +6,31 @@ const PATHS = {
         template: `
         <div class="home_container">
             <div class="home_info">
-                <h1 class="home_title">Bienvenido a Mi Blog</h1>
-                <p class="home_p">Disfruto de mi trabajo como Productor Musical & Beat Maker, 
-                es mi pasion y lo pongo a tu disposicion</p>
+                <h1 class="home_title">Bienvenido</h1>
+                <p class="home_p">
+                    La Productor Musical es mi pasion y lo pongo a tu disposicion.
+                    
+                </p>
             </div>
-            <div class="home_content">
-                <video src="https://www.youtube.com/watch?v=5HsuroKtzYM"></video>
-            </div>      
+                 
+        </div>
+        <div class="home_container2 home_img">
+        <img class="bible" src="./img/img_resources/bible-gf2ead3d2e_1920.jpg" alt="img">
+        
+            <div class="multimedia_content">
+                <div class="home_multimedia">
+                    <iframe class="main_video" width="560" height="315" src="https://www.youtube.com/embed/5HsuroKtzYM" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="home_multimedia">
+                    <iframe class="main_video" width="560" height="315" src="https://www.youtube.com/embed/cFtDRPI4Ius" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>         
         </div>
         `,
     },
