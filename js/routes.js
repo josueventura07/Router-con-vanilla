@@ -16,7 +16,33 @@ const PATHS = {
         </div>
         <div class="home_container2 home_img">
         <img class="bible" src="./img/img_resources/bible-gf2ead3d2e_1920.jpg" alt="img">
-        
+            <div>
+                <p>
+                Alabad a Dios en su santuario;
+
+                Alabadle en la magnificencia de su firmamento.
+                
+                Alabadle por sus proezas;
+                
+                Alabadle conforme a la muchedumbre de su grandeza.
+                
+                Alabadle a son de bocina;
+                
+                Alabadle con salterio y arpa.
+                
+                Alabadle con pandero y danza;
+                
+                Alabadle con cuerdas y flautas.
+                
+                Alabadle con címbalos resonantes;
+                
+                Alabadle con címbalos de júbilo.
+                
+                Todo lo que respira alabe a JAH.
+                
+                Aleluya. Salmos 150
+                </p>
+            </div>
             <div class="multimedia_content">
                 <div class="home_multimedia">
                     <iframe class="main_video" width="560" height="315" src="https://www.youtube.com/embed/5HsuroKtzYM" 
@@ -38,9 +64,11 @@ const PATHS = {
         path: '/about',
         template: `
             <div class="about_container">
-                <h1>👩🏻‍💻 Sobre mi</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
-                <img src="" alt="About_img">
+                <div class="about_content">
+                    <h1>👩🏻‍💻 Sobre mi</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
+                    <img src="" alt="About_img">
+                </div>
             </div>
         `,
     },
