@@ -8,15 +8,15 @@ const PATHS = {
             <div class="home_info">
                 <h1 class="home_title">Bienvenido</h1>
                 <p class="home_p">
-                    La Productor Musical es mi pasion y lo pongo a tu disposicion.
+                    La Producción Musical es mi pasión y lo pongo a tu disposición.
                     
                 </p>
             </div>
                  
         </div>
         <div class="home_container2 home_img">
-        <img class="bible" src="./img/img_resources/bible-gf2ead3d2e_1920.jpg" alt="img">
-            <div>
+        
+            <div class="quote">
                 <p>
                 Alabad a Dios en su santuario;
 
@@ -56,7 +56,8 @@ const PATHS = {
                     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                 </div>
-            </div>         
+            </div>
+            <div class="over_home_container2"></div>         
         </div>
         `,
     },
