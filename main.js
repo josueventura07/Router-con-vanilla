@@ -33,7 +33,7 @@ btnNav.forEach((element, i) => {
         
         let position = i
 
-       console.log(position)
+       
         
     })
 }) 
