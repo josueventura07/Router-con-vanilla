@@ -65,9 +65,9 @@ const PATHS = {
         path: '/about',
         template: `
             <div class="about_container">
-                <div class="about_content">
-                    <h1>👩🏻‍💻 Sobre mi</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
+                <div class="about_info">
+                    <h1 class="about_title">👩🏻‍💻 Sobre mi</h1>
+                    <p class="about_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
                     <img src="" alt="About_img">
                 </div>
             </div>
@@ -77,9 +77,11 @@ const PATHS = {
         path: '/contact',
         template: `
         <div class="contact_container">
-            <h1>📱 Contacto</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
-            <img src="" alt="Random Image">
+            <div class="contact_info">
+                <h1 class="contact_title">📱 Contacto</h1>
+                <p class="contact_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum aliquam reiciendis dignissimos? Perferendis consequuntur vitae fugiat fuga neque ipsum?</p>
+                <img src="" alt="Random Image">
+            </div>    
         </div>
             
         `,

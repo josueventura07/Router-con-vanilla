@@ -54,14 +54,68 @@ img {
     margin: auto;
 }
 
-
-header {
+.btn_menu {
     position: fixed;
     top: 30px;
-    margin: auto;
-    width: 100%;
-    height: 50px;
+    left: 30px;
+    font-size: 35px;
+    color: var(--text_color);
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+
+.btn_menu:hover {
+    transform: scale(1.08);
+    transition: transform 0.8s;
+}
+
+.hidden_menu {
+    transform: translateX(6000%);
+    transition: transform 1s ease;
+    
+}
+
+.btn_close-menu {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 35px;
+    color: var(--icons_color);
+    transform: translateX(-6000%);
+    transition: transform 0.8s ease;
+    cursor: pointer;
+}
+
+.btn_close-menu:hover {
+    transform: scale(1.08);
+    transition: transform 0.8s;
+}
+
+.hidden_close-menu {
+    transform: translateX(0%);
+    transition: transform 0.8s ease;
+    
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: none;
+    padding-top: 30px;
+    width: 200px;
+    height: 400px;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+    background-color: rgba(128, 128, 128, 0.9);
+    box-shadow: 0px 5px 10px #000003;
+    border-radius: 5px;
     z-index: 5;
+}
+
+.show_nav {
+    transform: translateX(0%);
+    transition: transform 0.8s ease;
 }
 
 .navbar {
@@ -73,30 +127,36 @@ ul {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 10px;
     margin: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
     
 }
 
 li {
     width: 150px;
-    height: 100%;
+    height: 50px;
     font-size: 25px;
     color: var(--text_color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform, width, height 0.5s ease;
 }
 
 li:hover {
-    transform: scale(1.05); 
-    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100px;
+    transform: scale(1.03); 
+    transition: transform, width, height 0.5s ease;
 }
 
 .title_logo {
@@ -176,7 +236,7 @@ li:hover {
     position: relative;
 }
 
-.whatsapp:hover {
+.deploy_whatsapp {
     width: 150px;
     display: flex;
    
@@ -192,11 +252,15 @@ li:hover {
     display: flex;
     align-items: center;
     color: var(--icons_color);
+    cursor: pointer;    
+}
+
+.hidden_number {
     transform: translateX(-100%);
     transition: transform 1s;
 }
 
-.whatsapp:hover > .phone {
+.deploy_number {
     transform: translateX(30%);
     transition: transform 1s;
 }
@@ -270,6 +334,7 @@ li:hover {
 }
 
 .home_p {
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -350,6 +415,14 @@ li:hover {
     height: 100%;
 }
 
+.about_container {
+    width: 100%;
+    height: 855px;
+    background-image: var(--bg_about);
+    background-position: center;
+    background-size: cover;
+}
+
 #About:hover {
     
     background-image: var(--bg_about);
@@ -358,21 +431,143 @@ li:hover {
     
 }
 
-#Contact:hover {
+.about_info {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    padding-top: 200px;
+    left: 500px;
     
+    box-sizing: border-box;
+    
+}
+
+.about_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 50px;
+    color: var(--title_color);
+}
+
+.about_p {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    font-size: 30px;
+    color: var(--text_color);
+    text-shadow: 0px 5px 10px #000003;
+}
+
+.contact_container {
+    width: 100%;
+    height: 855px;
+    background-image: var(--bg_contact);
+    background-position: center;
+    background-size: cover;
+}
+
+#Contact:hover {
+    color: var(--icons_color);
     background-image: var(--bg_contact);
     background-position: center;
     background-size: cover;
     
 }
 
+.contact_info {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    padding-top: 200px;
+    left: 500px;
+    
+    box-sizing: border-box;
+    
+}
+
+.contact_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 50px;
+    color: var(--icons_color);
+}
+
+.contact_p {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+    font-size: 30px;
+    color: var(--icons_color);
+    text-shadow: 0px 5px 10px #000003;
+}
+
 
 @media (min-width: 850px) {
 
-    ul {
+    .btn_menu {
+        transform: translateX(-1500%);
+        transition: transform 0.8s ease;
+    }
+    
         
+    .btn_close-menu {
+        
+        transform: translateX(2000%);
+        transition: transform 0.8s ease;
+        
+    }
+    
+      
+    .nav {
+        position: fixed;
+        top: 30px;
+        margin: auto;
+        width: 100%;
+        height: 50px;
+        transform: translateX(0);
+        transition: transform 0.8s ease;
+        background-color: transparent;
+        border-radius: none;
+        box-shadow: none;
+        z-index: 5;
+    }
+    
+    ul {
+        flex-direction: row;
         padding-left: 100px;
         padding-right: 0;
+    }
+
+    li {
+        width: 150px;
+        height: 50px;
+        font-size: 25px;
+        color: var(--text_color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    li:hover {
+        width: 150px;
+        height: 50px;
+        transform: scale(1.03); 
+        transition: transform, width, height 0.5s ease;
     }
 
     .title_logo {
@@ -431,4 +626,28 @@ li:hover {
        height: 200px;
        margin: auto;    
     }
+
+    .whatsapp {
+        transition: width 1s;
+        
+    }
+    
+    .whatsapp:hover {
+        width: 150px;
+        display: flex;
+        transition: width 0.5s;
+        
+        
+    }
+    
+    .whatsapp p {
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    
+    .whatsapp:hover > .phone {
+        transform: translateX(30%);
+        transition: transform 1s;
+    }
+    
 }
