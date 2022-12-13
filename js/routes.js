@@ -6,7 +6,7 @@ const PATHS = {
         template: `
         <div class="home_container">
             <div class="home_info">
-                <h1 class="home_title">Bienvenido</h1>
+                <h1 class="home_title">Bienvenid@</h1>
                 <p class="home_p">
                     La Producción Musical es mi pasión y lo pongo a tu disposición.
                     

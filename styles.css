@@ -57,6 +57,7 @@ img {
 
 header {
     position: fixed;
+    top: 30px;
     margin: auto;
     width: 100%;
     height: 50px;
@@ -77,11 +78,18 @@ ul {
     margin: auto;
     padding-left: 5px;
     padding-right: 5px;
+    
 }
 
 li {
+    width: 150px;
+    height: 100%;
     font-size: 25px;
     color: var(--text_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
@@ -270,6 +278,15 @@ li:hover {
     margin: auto;
     font-size: 30px;
     color: var(--text_color);
+    text-shadow: 0px 5px 10px #000003;
+}
+
+#home:hover {
+    
+    background-image: var(--bg_home);
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .quote {
@@ -331,6 +348,22 @@ li:hover {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+#About:hover {
+    
+    background-image: var(--bg_about);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#Contact:hover {
+    
+    background-image: var(--bg_contact);
+    background-position: center;
+    background-size: cover;
+    
 }
 
 
