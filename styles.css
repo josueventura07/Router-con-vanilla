@@ -520,14 +520,14 @@ li:hover {
 @media (min-width: 850px) {
 
     .btn_menu {
-        transform: translateX(-1500%);
+        display: none;
         transition: transform 0.8s ease;
     }
     
         
     .btn_close-menu {
         
-        transform: translateX(2000%);
+        display: none;
         transition: transform 0.8s ease;
         
     }
