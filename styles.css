@@ -63,6 +63,7 @@ img {
     cursor: pointer;
     
     transition: transform 0.8s;
+    z-index: 4;
 }
 
 .hidden_menu {
