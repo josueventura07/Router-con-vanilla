@@ -9,6 +9,14 @@ const Menu = document.querySelector('.btn_menu')
 const btnCloseMenu = document.querySelector('.btn_close-menu')
 const Nav = document.querySelector('.nav')
 
+window.addEventListener('scroll', (e) => {
+    if(window.scrollY >= 50) {
+        Nav.classList.add('bg_nav')
+    } else {
+        Nav.classList.remove('bg_nav')
+    }
+})
+
 Menu.addEventListener('click', (e) => {
     Nav.classList.toggle('show_nav')
     Menu.classList.toggle('hidden_menu')
